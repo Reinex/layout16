@@ -2,18 +2,6 @@
   text-align: center;
 }
 
-.sponsors {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
 .portfolio {
   display: -ms-grid;
   display: grid;
@@ -381,5 +369,22 @@ button {
   background-size: auto;
   margin-top: 200px;
   margin-bottom: 200px;
+}
+
+.client-section .client-section__title,
+.client-section .client-section__subtitle,
+.client-section .client-section__sponsors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.client-section__sponsors {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 /*# sourceMappingURL=main.css.map */

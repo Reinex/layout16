@@ -7,10 +7,21 @@
     margin-bottom: 200px;
 }
 
+.client-section .client-section__title,
+.client-section .client-section__subtitle,
+.client-section .client-section__sponsors{
+    display: flex;
+}
+
 .client-section__title{
 
 }
 
 .client-section__subtitle{
 
+}
+
+.client-section__sponsors{
+    flex-direction: row;
+    justify-content: space-around;
 }
