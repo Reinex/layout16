@@ -177,9 +177,6 @@ button {
   display: auto;
   padding: 209px;
   bottom: auto;
-}
-
-.main-section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -367,8 +364,6 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
-  margin-top: 200px;
-  margin-bottom: 200px;
 }
 
 .client-section .client-section__title,
@@ -377,6 +372,33 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.client-section__content {
+  width: auto;
+  height: 500px;
+}
+
+.client-section__title {
+  font-family: 'Muli', sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 40px;
+}
+
+.client-section__subtitle {
+  color: #f15050;
+  font-family: 'Muli', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 130px 5px;
 }
 
 .client-section__sponsors {
