@@ -1,0 +1,358 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="scss/main.css" rel="stylesheet">
+    <title>layout 16</title>
+</head>
+
+<body>
+    <div class="top_cover">
+        <header class="header">
+            <div class="header__logo">
+                <a href="#">
+                    <img src="assets/header/logo.png" alt="Retro Template" />
+                </a>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Home</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#services">Services</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#about">About</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#contact">Contact</a>
+                    </li>
+                    <li class="menu__item">
+                        <img src="assets/header/sepparator.png" alt="|" />
+                    </li>
+                    <li class="menu__item">
+                        <a href="#search">
+                            <img src="assets/header/navbar/searchIcon.png" alt="Search" />
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#login" name="login" type="hidden"></a>
+                        <button class="menu__button">Login</button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <article class="main-section">
+                <div class="wrapper">
+                    <h1 class="main-section__title">
+                        Taste the Creativity
+                    </h1>
+                    <h2 class="main-section__subtitle">
+                        We make awesome graphic and web design
+                    </h2>
+                    <button class="main-section__button">Get Started</button>
+                </div>
+            </article>
+    </div>
+    <!--блок с каруселью-->
+    <section class="services-section">
+        <a name="services"></a>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <input aria-hidden="true" checked="checked" class="carousel-open" hidden="" id="carousel-1"
+                    name="carousel" type="radio">
+                <div class="carousel-item">
+                    <!--первый элемент карусели-->
+                    <ul>
+                        <li class="carousel-item__part">
+                            <img class="carousel-item__img" alt="img1" src="assets/services/first.png">
+                        </li>
+                        <li class="carousel-item__part">
+                            <img class="carousel-item__img" alt="img1" src="assets/services/separator.png">
+                        </li>
+                        <li class="carousel-item__part">
+                            <p class="carousel-item__text">
+                                <!--Text-->
+                                Some text here.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <input aria-hidden="true" class="carousel-open" hidden="" id="carousel-2" name="carousel" type="radio">
+                <div class="carousel-item">
+                    <!--второй элемент карусели-->
+                    <ul>
+                        <li class="carousel-item__part">
+                            <img class="carousel-item__img" alt="img1" src="assets/services/second.png">
+                        </li>
+                        <li class="carousel-item__part">
+                            <img class="carousel-item__img" alt="img1" src="assets/services/separator.png">
+                        </li>
+                        <li class="carousel-item__part">
+                            <p class="carousel-item__text">
+                                <!--Text-->
+                                Some text here.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <input aria-hidden="true" class="carousel-open" hidden="" id="carousel-3" name="carousel" type="radio">
+                <div class="carousel-item">
+                    <!--третий элемент карусели-->
+                    <ul>
+                        <li class="carousel-item__part">
+                            <img class="carousel-item__img" alt="img1" src="assets/services/therd.png">
+                        </li>
+                        <li class="carousel-item__part">
+                            <img class="carousel-item__img" alt="img1" src="assets/services/separator.png">
+                        </li>
+                        <li class="carousel-item__part">
+                            <p class="carousel-item__text">
+                                <!--Text-->
+                                Some text here.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <label class="carousel-control prev control-1" for="carousel-3">‹</label>
+                <label class="carousel-control next control-1" for="carousel-2">›</label>
+                <label class="carousel-control prev control-2" for="carousel-1">‹</label>
+                <label class="carousel-control next control-2" for="carousel-3">›</label>
+                <label class="carousel-control prev control-3" for="carousel-2">‹</label>
+                <label class="carousel-control next control-3" for="carousel-1">›</label>
+                <ol class="carousel-indicators">
+                    <li>
+                        <label class="carousel-bullet" for="carousel-1">•</label>
+                    </li>
+                    <li>
+                        <label class="carousel-bullet" for="carousel-2">•</label>
+                    </li>
+                    <li>
+                        <label class="carousel-bullet" for="carousel-3">•</label>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <!--конец блока с каруселью-->
+    <section class="client-section">
+        <div class="wrapper">
+            <h1 class="client-section__title">
+                CLIENTS
+            </h1>
+            <h2 class="client-section__subtitle">
+                SOMEBODY ACTUALLY PAY US FOR THESE STUFF
+            </h2>
+        </div>
+        <!--спонсоры-->
+        <div class="sponsors">
+            <img src="assets/clients/cl1.png" alt="CHIPPY" />
+            <img src="assets/clients/cl2.png" alt="SWEETY" />
+            <img src="assets/clients/cl3.png" alt="Bullseye" />
+            <img src="assets/clients/cl4.png" alt="WallPointShop" />
+            <img src="assets/clients/cl5.png" alt="Golde" />
+            <img src="assets/clients/cl6.png" alt="LiliFowers" />
+        </div>
+    </section>
+    <section class="work-section">
+        <a name="portfolio">
+            <div class="wrapper">
+                <h1 class="work-section__title">
+                    RECENT WORK
+                </h1>
+                <h2 class="work-section__subtitle">
+                    WHEN WE ARE BORED WE MAKE SOME OF THESE
+                </h2>
+            </div>
+            <div class="portfolio">
+                <div>
+                    <img src="assets/work/row1_img1.png" alt="1" />
+                </div>
+                <div>
+                    <img src="assets/work/row1_img2.png" alt="2" />
+                </div>
+                <div>
+                    <img src="assets/work/row1_img3.png" alt="3" />
+                </div>
+                <div>
+                    <img src="assets/work/row1_img4.png" alt="4" />
+                </div>
+                <div>
+                    <img src="assets/work/row2_img1.png" alt="5" />
+                </div>
+                <div>
+                    <img src="assets/work/row2_img2.png" alt="6" />
+                </div>
+                <div>
+                    <img src="assets/work/row2_img3.png" alt="7" />
+                </div>
+                <div>
+                    <img src="assets/work/row2_img4.png" alt="8" />
+                </div>
+            </div>
+    </section>
+    <section class="advertice-section">
+        <div class="wrapper">
+            <h1 class="advertice-section__title">
+                Start Your Project Now
+            </h1>
+            <h2 class="advertice-section__subtitle">
+                Leave your description and we start the engine. Don't worry, you can cancel anytime.
+            </h2>
+            <button class="advertice-section__button">Start Project</button>
+        </div>
+    </section>
+    <section class="blog-section">
+        <a name="blog"></a>
+        <div class="blog-section__content">
+            <div>
+                <img src="assets/blog/img1.png" alt="1" />
+                <p class=blog-section__date>January 17,2017</p>
+                <p class="blog-section__info">Some Awesome Blog Title Here</p>
+            </div>
+            <div>
+                <img src="assets/blog/img2.png" alt="2" />
+                <p class=blog-section__date>January 17,2017</p>
+                <p class="blog-section__info">Some Awesome Blog Title Here</p>
+            </div>
+            <div>
+                <img src="assets/blog/img3.png" alt="3" />
+                <p class=blog-section__date>January 17,2017</p>
+                <p class="blog-section__info">Some Awesome Blog Title Here</p>
+            </div>
+        </div>
+        <div class="wrapper">
+            <button class="blog-section__button">More Stories</button>
+        </div>
+    </section>
+    <section class="newslatter-section">
+        <div class="newslatter-section__content">
+            <div class="newslatteer-section__text">
+                Subscribe to our Newsletter:
+            </div>
+            <div>
+                <input class="newslatter-section__input" type="email" name="email" maxlength="30" minlength="4"
+                    placeholder="Enter Email Address">
+            </div>
+            <div>
+                <button class="newslatter-section__submit">Subscribe</button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__content">
+            <div>
+                <ul class="footer-list">
+                    <li class="footer-list__item">
+                        <div class="footer__logo">
+                            <a href="#">
+                                <img src="assets/footer/logo.png" alt="Retro Template" />
+                            </a>
+                        </div>
+                    </li>
+                    <li class="footer-list__item">
+                        <p class="footer-list__text">Pellentesque in ipsum in orci porta dapibus. Vivamus magna<br>
+                            justo, lacinia eget consectetur sed, convallis at tellus</p>
+                    </li>
+                    <li class="footer-list__item">
+                        <p class="footer-list__text">Created by © 2017 <em class="footer__creator">ThemeXpert</em>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="footer-list">
+                    <li class="footer-list__item">
+                        <h1 class="footer-list__title">Links</h1>
+                    </li>
+                    <li class="footer-list__item">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a href="#services">Our Services</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <!--no Testimonials-->
+                        <a href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <!--no support-->
+                        <a href="#support">Support</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <!--no terms-->
+                        <a href="#terms">Terms and Conditions</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="footer-list">
+                    <li class="footer-list__item">
+                        <h1 class="footer-list__title">About Us</h1>
+                    </li>
+                    <li class="footer-list__item">
+                        <a href="#login">Sign In</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <!--no Testimonials-->
+                        <a href="#registration">Register</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a href="#about">About Us</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a href="#blog">Blog</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="footer-list">
+                    <li class="footer-list__item">
+                        <h1 class="footer-list__title">Contact Us</h1>
+                    </li>
+                    <li class="footer-list__item">
+                        <p class="footer-list__text">Get in touch with us via mail phone. We are waiting for<br> your
+                            call or massage.</p>
+                    </li>
+                    <li class="footer-list__item">
+                        <button class="footer-list__button">Mail</button>
+                    </li>
+                    <li class="footer-list__item">
+                        <div class="footer-list__social">
+                            <a href="#">
+                                <img src="assets/footer/facebookIcon.png" alt="facebook" />
+                            </a>
+                            <a href="#">
+                                <img src="assets/footer/twitterIcon.png" alt="twitter" />
+                            </a>
+                            <a href="#">
+                                <img src="assets/footer/googleIcon.png" alt="google+" />
+                            </a>
+                            <a href="#">
+                                <img src="assets/footer/dribbbleIcon.png" alt="dribbble" />
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    </main>
+</body>
+
+</html>
