@@ -3,17 +3,17 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;  
+    width: auto;
+    height: 520px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
 }
 
 .client-section .client-section__title,
-.client-section .client-section__subtitle,
-.client-section .client-section__sponsors{
-    display: flex;
-}
-
-.client-section__content{
-    width: auto;
-    height: 500px;
+.client-section .client-section__subtitle{
+    margin: 10px 5px;
+    padding: 10px 5px;
 }
 
 .client-section__title{
@@ -21,8 +21,7 @@
     font-weight: 400;
     font-size: 50px;
     color: white;
-    justify-content: center;
-    margin: 0 40px;
+    
 }
 
 .client-section__subtitle{
@@ -30,11 +29,18 @@
     font-family: 'Muli', sans-serif;
     font-weight: 400;
     font-size: 22px;
-    justify-content: center;
-    margin: 130px 5px;
+
 }
 
 .client-section__sponsors{
-    flex-direction: row;
+    width: 1200px;
+    height: 60px;
+    padding-top: 120px;
+    display:grid;
+    grid-template-columns: repeat(6, 80px);
+    grid-column-gap: 4px;
+    grid-row-gap: 0px;
+    display: flex;
+    align-self: center;
     justify-content: space-around;
 }
