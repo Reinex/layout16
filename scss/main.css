@@ -126,8 +126,10 @@ button {
 }
 
 .main-section__subtitle {
+  font-family: 'Muli', sans-serif;
+  font-weight: 400;
   font-size: 14px;
-  color: whitesmoke;
+  color: #b3b3b3;
   padding: 1px 1px;
   margin: 0 1px;
 }
