@@ -1,0 +1,43 @@
+.work-section{
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;  
+    width: auto;
+    height: 1000px;
+    display: flex; 
+    justify-content: center;
+}
+
+.work-section .work-section__title,
+.work-section .work-section__subtitle{
+    margin: 10px 5px;
+    padding: 10px 5px;
+}
+
+.work-section .wrapper{
+    padding-top: 90px;
+}
+
+.work-section__title{
+    font-family: 'Muli', sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    color: black;
+}
+
+.work-section__subtitle{
+    color: rgb(241, 80, 80);
+    font-family: 'Muli', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.portfolio{
+    padding-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 291px);
+    grid-auto-rows: minmax(100px, auto);
+    grid-column-gap: 4px;
+    grid-row-gap: 0px;
+}

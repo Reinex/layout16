@@ -1,0 +1,74 @@
+.blog-section{
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;  
+    width: auto;
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blog-section .blog-section__title,
+.blog-section .blog-section__subtitle{
+    margin: 5px 5px;
+    padding: 5px 5px;
+}
+
+.blog-section__title{
+    font-family: 'Muli', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: black;
+}
+
+.blog-section__subtitle{
+    color: rgb(241, 80, 80);
+    font-family: 'Muli', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.blog-section .wrapper{
+    padding-top: 10%px;
+}
+
+.blog-section .wrap{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.blog-section__button{
+    background-color: rgb(241, 80, 80);
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    outline: none !important; 
+    width: 150px;
+    height: 35px;
+}
+
+.blog-section__content{
+    padding-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    grid-row: 2;
+    grid-column-gap: 15px;
+    grid-row-gap: 10px;
+    align-self: center;
+}
+
+.blog-section__date{
+    color: grey;
+    font-family: 'Muli', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+}
+
+.blog-section__info{
+    color: black;
+    font-family: 'Muli', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}

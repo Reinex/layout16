@@ -1,0 +1,45 @@
+.client-section{
+    background-image: url("../assets/clients/bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;  
+    width: auto;
+    height: 583px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+
+.client-section .client-section__title,
+.client-section .client-section__subtitle{
+    margin: 10px 5px;
+    padding: 10px 5px;
+}
+
+.client-section__title{
+    font-family: 'Muli', sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    color: white;
+    
+}
+
+.client-section__subtitle{
+    color: rgb(241, 80, 80);
+    font-family: 'Muli', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+
+}
+
+.client-section__sponsors{
+    width: 1200px;
+    height: 60px;
+    padding-top: 120px;
+    display:grid;
+    grid-template-columns: repeat(6, 80px);
+    grid-column-gap: 4px;
+    grid-row-gap: 0px;
+    align-self: center;
+    justify-content: space-around;
+}

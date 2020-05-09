@@ -2,6 +2,10 @@ body {
     margin: 0;
 }
 
+.wrapper{
+    text-align: center;
+}
+
 a {
     /* цвет текста */
     color: #000;

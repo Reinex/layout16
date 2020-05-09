@@ -4,7 +4,7 @@
     background-position: center;
     background-size: auto;  
     width: auto;
-    height: 520px;
+    height: 583px;
     display: flex; 
     flex-direction: column;
     justify-content: center;
@@ -40,7 +40,6 @@
     grid-template-columns: repeat(6, 80px);
     grid-column-gap: 4px;
     grid-row-gap: 0px;
-    display: flex;
     align-self: center;
     justify-content: space-around;
 }

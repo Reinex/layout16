@@ -1,0 +1,131 @@
+.services-section{
+    background-image: url("../assets/services/bg.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: auto;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.carousel-item,.carousel-item .carousel-item__part, .carousel-item .carousel-item__img,
+.carousel-item .carousel-item__text{
+    display: flex;
+}
+
+.carousel-item__part{
+    justify-content: center;
+    padding: 4px 4px;
+}
+
+.carousel-item__text{
+    color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    padding: 4px 4px;
+}
+
+.carousel {
+    position: relative;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding: 5px 5px;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    background-image: url("../assets/services/shape.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 371px 399px;
+    justify-content: center;
+    position: absolute;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.carousel-item__img {
+    justify-content: center;
+    display: block;
+    height: auto;
+    max-width: 100%;
+    padding: 3px;
+}
+
+
+.carousel-item__img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.carousel-control {
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 2%;
+}
+
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: #a8a8a8;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carousel-bullet:hover {
+    color: #717171;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #505050;
+}
