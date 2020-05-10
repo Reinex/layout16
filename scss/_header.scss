@@ -16,17 +16,17 @@
 .header{
     align-items: center;
     justify-content: space-around;
-    padding: 0 0;
-
 }
 .header__logo{
     padding: 1px 1px;
+    padding-left: 15%;
     margin: 0 1px; 
 }
 .menu{
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 10px 0;
+    padding-right: 15%;
 }
 .menu__item{
     padding: 2px 5px;
@@ -40,4 +40,33 @@
     outline: none !important; 
     width: 74px;
     height: 23px;
+}
+
+.header {
+    .hamburger {
+        width: 45px;
+        height: 25px;
+        cursor: pointer;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        &__item,
+        &__item:after,
+        &__item:before {
+            width: 100%;
+            border-bottom: 2px solid rgb(241, 80, 80);
+        }
+        &__item:after,
+        &__item:before {
+            content: '';
+            position: absolute;
+        }
+        &__item:after {
+            top: 0;
+        }
+        &__item:before {
+            bottom: 0;
+        }
+    }
 }

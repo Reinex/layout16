@@ -1,0 +1,76 @@
+@media (max-width: 1100px) {
+    .header {
+        &__logo{
+            padding-top: 20px;
+        }
+        justify-content: space-between;
+        .hamburger {
+            display: flex;
+            margin: 20px;
+        }
+        .menu,
+        .menu .menu__item {
+            display: none;
+        }
+    }    
+    .main-section {
+        &__title {
+            line-height: 100px;
+            margin-bottom: 20px;
+        }
+    }
+    .top_cover{
+        min-width: 1100px;
+    }
+    .services-section{
+        min-width: 1100px;
+    }
+    .client-section{
+        min-width: 1100px;
+        &__sponsors{
+            max-width: 1100px;
+            padding-top: 120px;
+            display:grid;
+            grid-template-columns: repeat(6, 60px);
+            grid-column-gap: 10px;
+            grid-row-gap: 0;
+            align-self: center;
+            justify-content: space-around;
+        }
+    }   
+    .work-section{
+        min-width: 1100px;
+        height: auto;
+        padding-bottom: 30px;
+        &__portfolio{
+            display: grid;
+            grid-template-columns: repeat(2, 291px);
+            grid-auto-rows: minmax(100px, 4);
+            grid-column-gap: 4px;
+            grid-row-gap: 0px;
+        }
+    }
+    .advertice-section{
+        min-width: 1100px;
+    }
+    .blog-section{
+        min-width: 1100px;
+        padding-top: 30px;
+        padding-bottom: 60px;
+        height: auto;
+        &__content{
+            display: grid;
+            grid-template-columns: repeat(1, 370px);
+            grid-row: 3;
+            grid-column-gap: 15px;
+            grid-row-gap: 30px;
+            align-self: center;
+        }
+    }
+    .newsletter-section{
+        min-width: 1100px;
+    }
+    .footer{
+        min-width: 1100px;
+    }
+}

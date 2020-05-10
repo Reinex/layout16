@@ -1,0 +1,160 @@
+@media (max-width: 480px) {
+    .header {
+        &__logo{
+            padding-top: 20px;
+        }
+        justify-content: space-between;
+        .hamburger {
+            display: flex;
+            margin: 20px;
+        }
+        .menu,
+        .menu .menu__item {
+            display: none;
+        }
+    }    
+    .main-section {
+        padding-top: 140px;
+        &__title {
+            line-height: 50px;
+            margin-bottom: 20px;
+            font-size: 40px;
+            padding: 1px;
+            bottom: 0;
+            margin: 1px;
+        }
+        &__subtitle{
+            color: rgb(241, 80, 80);
+        }
+    }
+    .main-section .wrapper{
+        min-width: 400px;
+        max-height: 100px;
+    }
+    .top_cover{
+        min-width: 480px;
+        min-height: 480px;
+    }
+    .services-section{
+        min-width: 480px;
+    }
+    .client-section{
+        min-width: 480px;
+        height: 500px;
+        &__title{
+            font-size: 40px;
+            padding-top: 20px;
+        }
+        &__subtitle{
+            font-size: 14px;
+        }   
+        &__sponsors{
+            max-width: 480px;
+            padding-top: 15px;
+            display:grid;
+            grid-template-columns: repeat(3, auto);
+            grid-row: 2;
+            grid-column-gap: 25px;
+            grid-row-gap: 20px;
+            align-self: center;
+            justify-content: space-around;
+        }
+    }   
+    .client-section .wrapper{
+        padding-top: 25px;
+        line-height: 18px;
+        margin-bottom: 15%;
+    }
+    .work-section{
+        min-width: 480px;
+        height: auto;
+        padding-bottom: 30px;
+        &__title{
+            font-size: 40px;
+        }
+        &__subtitle{
+            font-size: 14px;
+        }
+        &__portfolio{
+            display: grid;
+            grid-template-columns: repeat(1, 291px);
+            grid-auto-rows: minmax(100px, 8);
+            grid-column-gap: 0px;
+            grid-row-gap: 10px;
+        }
+    }
+    .work-section .wrapper{
+        padding-top: 45px;
+    }
+    .advertice-section{
+        min-width: 480px;
+        &__title{
+            font-size: 35px;
+        }
+    }
+    .blog-section{
+        min-width: 480px;
+        padding-top: 30px;
+        padding-bottom: 60px;
+        height: auto;
+        &__title{
+            font-size: 35px;
+        }
+        &__subtitle{
+            font-size: 14px;
+        }
+        &__content{
+            display: grid;
+            grid-template-columns: repeat(1, 370px);
+            grid-row: 3;
+            grid-column-gap: 15px;
+            grid-row-gap: 30px;
+            align-self: center;
+        }
+    }
+    .newsletter-section{
+        background-size: 480px 195px;
+        min-width: 480px;
+        height: 195px;
+        &__content{
+            display: grid;
+            grid-template-columns: repeat(1, 370px);
+            grid-row: 3;
+            grid-column-gap: 15px;
+            grid-row-gap: 30px;
+            align-self: center;
+            justify-self: center;
+            padding-bottom: 20px;
+        }
+        &__submit{
+            width: 120px;
+        }
+    }
+    .footer{
+        min-width: 480px;
+        height: auto;
+        flex-direction: column;
+        background-size: 480px 440px;
+        &__content{
+            width: 480px;
+            display: grid;
+            grid-template-columns: repeat(2, 200px);
+            grid-row: 2;
+            grid-column-gap: 1px;
+            grid-row-gap: 1px;
+            justify-content: space-around;
+            padding-bottom: 30px;
+            padding-top: 20px;
+        }
+    }
+    .footer-list{
+        &__item{
+            padding: 0;
+        }
+        &__button{
+            width: 140px;
+            background-size: 140px 28px;
+            background-position: left;
+        }
+    }
+}

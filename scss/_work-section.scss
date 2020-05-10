@@ -6,6 +6,7 @@
     width: auto;
     height: 1000px;
     display: flex; 
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -33,11 +34,13 @@
     font-size: 22px;
 }
 
-.portfolio{
+.work-section__portfolio{
     padding-top: 70px;
     display: grid;
     grid-template-columns: repeat(4, 291px);
-    grid-auto-rows: minmax(100px, auto);
+    grid-auto-rows: minmax(100px, 2);
     grid-column-gap: 4px;
     grid-row-gap: 0px;
+    align-self: center;
+    justify-content: space-around;
 }
