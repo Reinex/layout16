@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Muli:wght@500&display=swap" rel="stylesheet">
     <link href="scss/main.css" rel="stylesheet">
+    <script src="./js/main.js" type="module"></script>
     <title>layout 16</title>
 </head>
 
@@ -53,6 +54,8 @@
             </nav>
 
             <div class="hamburger">
+                <div class="hamburger__item"></div>
+                <div class="hamburger__item"></div>
                 <div class="hamburger__item"></div>
             </div>
         </header>
@@ -263,18 +266,20 @@
         </div>
     </section>
     <section class="newsletter-section">
-        <div class="newsletter-section__content">
-            <div class="newsletteer-section__text">
-                Subscribe to our Newsletter:
+        <form action="">
+            <div class="newsletter-section__content">
+                <div class="newsletteer-section__text">
+                    Subscribe to our Newsletter:
+                </div>
+                <div>
+                    <input class="newsletter-section__input" type="email" name="email" maxlength="30" minlength="4"
+                        placeholder="Enter Email Address">
+                </div>
+                <div>
+                    <button class="newsletter-section__submit">Subscribe</button>
+                </div>
             </div>
-            <div>
-                <input class="newsletter-section__input" type="email" name="email" maxlength="30" minlength="4"
-                    placeholder="Enter Email Address">
-            </div>
-            <div>
-                <button class="newsletter-section__submit">Subscribe</button>
-            </div>
-        </div>
+        </form>
     </section>
     <footer class="footer">
         <div class="footer__content">

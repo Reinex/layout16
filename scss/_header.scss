@@ -48,25 +48,32 @@
         height: 25px;
         cursor: pointer;
         display: none;
-        justify-content: center;
+        justify-content: space-between;
+        flex-direction: column;
         align-items: center;
         position: relative;
-        &__item,
-        &__item:after,
-        &__item:before {
+        &.active{
+            .hamburger__item:nth-child(2){
+            transform: rotate(250deg);
+            opacity: 0;
+            }
+            .hamburger__item:nth-child(1){
+            transform: rotate(405deg);
+            top: 6px;
+            }
+            .hamburger__item:nth-child(3){
+            transform: rotate(-405deg);
+            top: -6px;
+            }
+        }
+        &__item:nth-child(1),
+        &__item:nth-child(2),
+        &__item:nth-child(3) {
             width: 100%;
             border-bottom: 2px solid rgb(241, 80, 80);
-        }
-        &__item:after,
-        &__item:before {
-            content: '';
-            position: absolute;
-        }
-        &__item:after {
+            transition: 500ms;
+            position: relative;
             top: 0;
-        }
-        &__item:before {
-            bottom: 0;
         }
     }
 }
