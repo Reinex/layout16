@@ -72,6 +72,19 @@ button {
   margin: 0 1px;
 }
 
+.header__logo:hover::after {
+  content: attr(data-title);
+  position: absolute;
+  left: 30%;
+  top: 10%;
+  z-index: 1;
+  background: rgba(255, 255, 230, 0.9);
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  padding: 5px 10px;
+  border: 1px solid #f15050;
+}
+
 .menu {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
