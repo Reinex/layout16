@@ -94,7 +94,6 @@ button {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 10px 0;
-  padding-right: 15%;
 }
 
 .menu__item {
@@ -110,6 +109,110 @@ button {
   outline: none !important;
   width: 74px;
   height: 23px;
+}
+
+.header .menu-dialog {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: #2a2a2a;
+  border: 2px solid #f15050;
+  z-index: 30;
+}
+
+.header .menu-dialog::-webkit-backdrop {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.header .menu-dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.header .menu-dialog__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[1];
+      grid-template-columns: repeat(1, auto);
+  grid-auto-rows: minmax(100px, 3);
+  grid-column-gap: 4px;
+  grid-row-gap: 40px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  z-index: 20;
+}
+
+.header #close {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  background-color: #f15050;
+}
+
+.header #close:hover {
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+}
+
+.header .menu-dialog__text {
+  font-family: sans-serif;
+  font-size: 35px;
+  text-align: center;
+  color: #f15050;
+}
+
+.header .menu-dialog__input {
+  padding: 7px;
+  background: none;
+  color: white;
+  outline: none !important;
+  border: 0;
+  border-bottom: 1px solid white;
+}
+
+.header .menu-dialog__input::-webkit-input-placeholder {
+  color: white;
+}
+
+.header .menu-dialog__input:-ms-input-placeholder {
+  color: white;
+}
+
+.header .menu-dialog__input::-ms-input-placeholder {
+  color: white;
+}
+
+.header .menu-dialog__input::placeholder {
+  color: white;
+}
+
+.header .menu-dialog__submit {
+  background-color: #383874;
+  color: white;
+  border-radius: 15px;
+  cursor: pointer;
+  outline: none !important;
+  width: 180px;
+  height: 35px;
+}
+
+.header .menu-dialog__submit:hover {
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+}
+
+.header .message.success {
+  color: green;
+  display: none;
+}
+
+.header .message.failure {
+  color: red;
+  display: none;
 }
 
 .header .hamburger-menu__button {
@@ -271,6 +374,11 @@ button {
   height: 30px;
   padding: 5px 5px;
   margin: 40px 5px;
+}
+
+.main-section__button:hover {
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
 }
 
 .services-section {
@@ -497,7 +605,7 @@ button {
 }
 
 .work-section .wrapper {
-  padding-top: 90px;
+  padding-top: 40px;
 }
 
 .work-section__title {
@@ -578,6 +686,11 @@ button {
   margin: 40px 5px;
 }
 
+.advertice-section__button:hover {
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+}
+
 .blog-section {
   background-color: white;
   background-repeat: no-repeat;
@@ -634,6 +747,11 @@ button {
   outline: none !important;
   width: 150px;
   height: 35px;
+}
+
+.blog-section__button:hover {
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
 }
 
 .blog-section__content {
@@ -807,6 +925,11 @@ button {
   outline: none !important;
   width: 358px;
   height: 38px;
+}
+
+.footer-list__button:hover {
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
 }
 
 .footer-list__social {

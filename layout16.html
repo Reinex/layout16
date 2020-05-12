@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Muli:wght@500&display=swap" rel="stylesheet">
     <link href="scss/main.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./js/main.js" type="module"></script>
     <title>layout 16</title>
 </head>
@@ -47,11 +48,25 @@
                         </a>
                     </li>
                     <li class="menu__item">
+                        <dialog class="menu-dialog">
+                            <div class="menu-dialog__content">
+                                <p class="menu-dialog__text">LogIn</p>
+                                <input class="menu-dialog__input" id="email" maxlength="30" minlength="4"
+                                    placeholder="Email Address">
+                                <input class="menu-dialog__input" id="password" maxlength="8"
+                                    minlength="4" placeholder="Password(4-8 symbols)">
+                                <button type="submit" class="menu-dialog__submit">Submit</button>
+                                <p class="message success">Success!</p>
+                                <p class="message failure">Please try again later.</p>
+                                <button id="close">X</button>
+                            </div>
+                        </dialog>
                         <a href="#login" name="login" type="hidden"></a>
-                        <button class="menu__button">Login</button>
+                        <button id="show" class="menu__button">Login</button>
                     </li>
                 </ul>
             </nav>
+
             <div class="hamburger-menu">
                 <a href="#" class="hamburger-menu__button">
                     <span class="hamburger-menu__lines"></span>

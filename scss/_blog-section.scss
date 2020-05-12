@@ -49,6 +49,10 @@
     height: 35px;
 }
 
+.blog-section__button:hover{
+    filter: brightness(0.7);
+}
+
 .blog-section__content{
     padding-top: 5%;
     display: grid;
