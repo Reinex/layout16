@@ -7,6 +7,9 @@
         .hamburger-menu {
             visibility: initial;
         }
+        .hamburger-menu__link{
+            font-size: 14px;
+        }
         .menu,
         .menu .menu__item {
             display: none;

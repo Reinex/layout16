@@ -953,6 +953,9 @@ button {
   .header .hamburger-menu__button {
     visibility: initial;
   }
+  .header .hamburger-menu__link {
+    font-size: 18px;
+  }
   .header .menu,
   .header .menu .menu__item {
     display: none;
@@ -1038,6 +1041,9 @@ button {
   }
   .header .hamburger-menu {
     visibility: initial;
+  }
+  .header .hamburger-menu__link {
+    font-size: 14px;
   }
   .header .menu,
   .header .menu .menu__item {
