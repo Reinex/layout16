@@ -120,6 +120,7 @@ button {
   width: 80px;
   height: 80px;
   background-color: none !important;
+  visibility: hidden;
 }
 
 .header .hamburger-menu__button:hover .hamburger-menu__lines {
@@ -826,11 +827,8 @@ button {
   .header__logo {
     padding-top: 20px;
   }
-  .header .hamburger {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 20px;
+  .header .hamburger-menu__button {
+    visibility: initial;
   }
   .header .menu,
   .header .menu .menu__item {
@@ -915,11 +913,8 @@ button {
   .header__logo {
     padding-top: 20px;
   }
-  .header .hamburger {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 20px;
+  .header .hamburger-menu {
+    visibility: initial;
   }
   .header .menu,
   .header .menu .menu__item {

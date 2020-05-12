@@ -4,9 +4,8 @@
             padding-top: 20px;
         }
         justify-content: space-between;
-        .hamburger {
-            display: flex;
-            margin: 20px;
+        .hamburger-menu__button {
+            visibility: initial;
         }
         .menu,
         .menu .menu__item {

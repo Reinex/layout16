@@ -1,5 +1,6 @@
 import Query from './src/query.js';
 import Hamburger from './src/hamburger.js';
+
 const hamburgerNode = document.querySelector('.hamburger-menu');
 const hamburger = new Hamburger(hamburgerNode);
 hamburger.burgerMenu(hamburgerNode);
